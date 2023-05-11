@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "289873852177",
+    "project_id": "projetodevmovel",
+    "storage_bucket": "projetodevmovel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289873852177:android:23e917bc8c7f7724c67eb0",
+        "android_client_info": {
+          "package_name": "unifor.devmovel.learningfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289873852177-q54knenbd6gcb55dtfvag38brmv17t95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWgn60OOYARWTIHLIjDmZT-SsgA_5Blwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289873852177-q54knenbd6gcb55dtfvag38brmv17t95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
