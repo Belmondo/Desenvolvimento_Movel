@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(const QuestionApp());
+  runApp(QuestionApp());
 }
 
 class QuestionApp extends StatelessWidget {
-  const QuestionApp({super.key});
+  QuestionApp({super.key});
+
+  void answer() {
+    print('Questions Answered');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +21,14 @@ class QuestionApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Questions'),
+          title: Text('Questions'),
         ),
         body: Column(
           children: <Widget>[
             Text(perguntas[0]),
-            const ElevatedButton(
-              onPressed: null,
+            ElevatedButton(
               child: Text('First Answer'),
+              onPressed: answer,
             )
           ],
         ),
