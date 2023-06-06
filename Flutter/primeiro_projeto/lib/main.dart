@@ -29,6 +29,14 @@ class QuestionApp extends StatelessWidget {
             ElevatedButton(
               child: Text('First Answer'),
               onPressed: answer,
+            ),
+            ElevatedButton(
+              child: Text('Second Answer'),
+              onPressed: answer,
+            ),
+            ElevatedButton(
+              child: Text('Third Answer'),
+              onPressed: answer,
             )
           ],
         ),
