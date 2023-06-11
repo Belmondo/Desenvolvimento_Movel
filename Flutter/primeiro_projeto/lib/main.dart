@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_projeto/answers.dart';
 import 'package:primeiro_projeto/question.dart';
 
 main() {
@@ -12,7 +13,6 @@ class QuestionAppState extends State<QuestionApp> {
     setState(() {
       perguntaSelecionada++;
     });
-    print(perguntaSelecionada);
   }
 
   @override
@@ -30,18 +30,9 @@ class QuestionAppState extends State<QuestionApp> {
         body: Column(
           children: <Widget>[
             new Question(perguntas[perguntaSelecionada]),
-            ElevatedButton(
-              child: Text('First Answer'),
-              onPressed: answer,
-            ),
-            ElevatedButton(
-              child: Text('Second Answer'),
-              onPressed: answer,
-            ),
-            ElevatedButton(
-              child: Text('Third Answer'),
-              onPressed: answer,
-            )
+            new Answers('First Answer', answer),
+            new Answers('Second Answer', answer),
+            new Answers('Third Answer', answer)
           ],
         ),
       ),
