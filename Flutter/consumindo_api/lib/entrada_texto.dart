@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Texto extends StatelessWidget {
+class EntradaTexto extends StatelessWidget {
   late String _textoDigitado = "";
 
   @override

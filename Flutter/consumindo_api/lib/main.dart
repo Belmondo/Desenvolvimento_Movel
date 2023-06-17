@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'retorno_api.dart';
-import 'campo_texto.dart';
+import 'entrada_texto.dart';
 import 'package:flutter/material.dart';
 import "botao.dart";
 import "package:http/http.dart" as http;
@@ -11,9 +11,8 @@ main() {
 }
 
 class ConsomeApiState extends State<ConsomeApiApp> {
-  var perguntaSelecionada = 0;
   String mil = " ";
-  Texto campo_de_texto = new Texto();
+  EntradaTexto entradaTexto = new EntradaTexto();
   String URL = "api.funtranslations.com";
   String PATH = "/translate/dothraki.json";
   late Map<String, String> _queryParameters;
@@ -21,16 +20,10 @@ class ConsomeApiState extends State<ConsomeApiApp> {
   Future getTextoTraduzido() async {
     Traducao textoTraduzido;
     var response = await http.get(Uri.https(URL, PATH, _queryParameters));
-    //print(response.request);
-    //print(response.body);
     var jsonData = jsonDecode(response.body);
-    //print(jsonData);
     mudaParametro();
     var content = jsonData['contents'];
     textoTraduzido = new Traducao(content['translated'].toString());
-    //campo_saida.atualizaTexto(textoTraduzido.getTraducao());
-    //campo_saida.atualizaTexto("cuida  ");
-    print("entrou aqui");
     muda(textoTraduzido.getTraducao());
   }
 
@@ -49,7 +42,7 @@ class ConsomeApiState extends State<ConsomeApiApp> {
   void answer() {
     setState(() {
       _queryParameters = <String, String>{
-        'text': campo_de_texto.getTextoDigitado(),
+        'text': entradaTexto.getTextoDigitado(),
       };
       getTextoTraduzido();
       //print(PATH);
@@ -65,7 +58,7 @@ class ConsomeApiState extends State<ConsomeApiApp> {
         ),
         body: Column(
           children: <Widget>[
-            campo_de_texto,
+            entradaTexto,
             new Botao('Traduza para mim', answer),
             new RetornoAPI(mil),
           ],
