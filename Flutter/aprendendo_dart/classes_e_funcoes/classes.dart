@@ -6,7 +6,7 @@ class Product {
     this.name = name;
     this.price = price;
   }
-  //an optimizad way
+  //Jeito otimizado
   //Product(this.name, this.price);
 }
 
