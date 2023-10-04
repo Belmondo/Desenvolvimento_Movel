@@ -9,10 +9,13 @@ class RetornoAPI extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        border: InputBorder.none,
-        hintText: textQuestion,
+    return Container(
+      height: 150,
+      child: TextField(
+        decoration: InputDecoration(
+          border: InputBorder.none,
+          hintText: textQuestion,
+        ),
       ),
     );
   }

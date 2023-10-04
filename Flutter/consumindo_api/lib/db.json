@@ -1,0 +1,26 @@
+{
+    "pessoa": [
+      {
+        "nome": "Siwan Oliveira",
+        "telefone": [
+          {
+            "residencial": "1234-5678",
+            "celular": "91288497997"
+          }
+        ],
+        "email": "siwan@gmail.com",
+        "nascimento": "25-05-2000"
+      },
+      {
+        "nome": "Rafael",
+        "telefone": [
+          {
+            "residencial": "1112-1314",
+            "celular": "91288497997"
+          }
+        ],
+        "email": "rafael@gmail.com",
+        "nascimento": "13-07-2001"
+      }
+    ]
+  }

@@ -6,10 +6,11 @@ class EntradaTexto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      maxLength: 10,
       decoration: InputDecoration(
           border: InputBorder.none,
           icon: Icon(Icons.search),
-          hintText: 'Digite uma frase'),
+          hintText: 'Digite um CEP'),
       onChanged: (value) {
         _textoDigitado = value;
       },

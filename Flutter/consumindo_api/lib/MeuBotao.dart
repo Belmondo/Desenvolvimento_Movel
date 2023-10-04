@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Botao extends StatelessWidget {
+class MeuBotao extends StatelessWidget {
   String answerText;
   void Function() callingTheFunction;
 
-  Botao(this.answerText, this.callingTheFunction);
+  MeuBotao(this.answerText, this.callingTheFunction);
 
   @override
   Widget build(BuildContext context) {
