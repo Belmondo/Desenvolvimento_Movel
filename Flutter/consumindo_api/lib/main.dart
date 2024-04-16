@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:consumindo_api/modelo/ResultCep.dart';
 //import 'package:consumindo_api/modelo/pessoa.dart';
 import 'MeuBotao.dart';
-import 'retorno_api.dart';
 import 'entrada_texto.dart';
 import 'package:flutter/material.dart';
 import "package:http/http.dart" as http;
