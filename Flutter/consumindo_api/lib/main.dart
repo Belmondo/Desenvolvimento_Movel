@@ -83,7 +83,18 @@ class ConsomeApiState extends State<ConsomeApiApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: CustomScrollView(
+        body: Column(
+          children: [
+            Text("Seja Bem-Vindo ao Buscador de Cep"),
+            entradaTexto,
+            MeuBotao("Digite seu CEP", answer),
+            Text(logradouro),
+            Text(complemento),
+            Text(bairro),
+            Text(localidade),
+          ],
+        ),
+        /*CustomScrollView(
           slivers: [
             const SliverAppBar(
               pinned: true,
@@ -130,7 +141,7 @@ class ConsomeApiState extends State<ConsomeApiApp> {
               ),
             ),
           ],
-        ),
+        ),*/
       ),
     );
   }
